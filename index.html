@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>معهد اكتساب</title>
+</head>
+
+
+<body>
+    <div class="section_1">
+        <div class="text">
+            <h1>مستقبلك ومستقبل طفلك يبدأ من هنا الأفضل</h1>
+            <p>استثمر بتعليمك</p>
+        </div>
+        <img src="feed-image-1.png" alt="" class="first">
+    </div>
+
+
+    <div class="section_2">
+        <img src="IMG-20240809-WA0008.jpg" alt="">
+
+        <div class="text_1">
+            <h1>الماذا نحن الأفضل؟</h1>
+            <p>دائما نسعى لتوفير بيئة محفزة للتعلم لتمر باتنا لذلك لدينا مدربات ماهرات ومواد علمية كافية
+                لمحتوى ذا فائدة بإذن الله. ايضأ نعني بتقديم كل ماهو مفيد لمترباتنا لتطوير مهاراتهن والمضي نحو تحقيق
+                أهدافهن
+                الحاضرة والمستقبلية
+            </p>
+        </div>
+        </div>
+        <div class="section_3">
+            <h1>مزايا الدراسة في معهد اكتساب</h1>
+
+            <div class="text_father">
+                <div class="text_3">
+                    <p class="no">01</p>
+                    <p>كوادر اشرافيه محترفه</p>
+                </div>
+                <div class="text_3">
+                    <p class="no">02</p>
+                    <p>مناهج تفاعلية معتمده</p>
+                </div>
+                <div class="text_3">
+                    <p class="no">03</p>
+                    <p>كوادر تعليمية متميزه</p>
+                </div>
+                <div class="text_3">
+                    <p class="no">04</p>
+                    <p>شهادة معتمدة</p>
+                </div>
+            </div>
+            </div>
+            <div class="section_4">
+                <h1>استعد للمستقبل مع معهد اكتساب</h1>
+            <p>اكتسب مهارات جديده و أفتح أبواب جديده في حياتك الشخصيه</p>    
+                <div class="text_father">
+                  
+                <div class="father">
+                        <p>دورة مهارات معلمات رياض اطفال</p>
+                        <p>دورة ادارة الموارد البشريه</p>
+                        <p>دورة السكرتاريه التنفيذيه و ادارة المكاتب</p>
+                        <p>دورة التميز في خدمة العملاء</p>
+                        <p>دورة العلاقات العامة و تنظيم المعارض و المؤتمرات</p>
+                    </div>
+                         
+                <div class="father">
+                  
+                        <p>مهارات الاتصال الاداري و الفعال</p>
+                        <p>و علاقيات العمل و السلوك الوظيفيي </p>
+                        <p>تظوير مهارات اخصائي التوجيه</p>
+                        <p>والارشاد الاسري و التربوي</p>
+                        <p>دورة المحاسبيه و الادارة الماليه</p>
+                        <p>دورة مهارات التسويق و المبيعات</p>
+                        </div>
+
+
+                         
+                <div class="father">                  
+               
+                        <p>شهادة معتمدة</p>
+                       
+                        <p>دورة اعداد ودراسة جدوى الصغيرة</p>
+                        <p>   تدريب TOT دورة </p>
+                        <p>دورة النزول الثنوي</p>
+                        <p>دورة جدول البيانات</p>
+                        </div>
+                  
+           
+                 
+                </div>
+                </div>
+                
+ 
+  <div class="inma">
+    <button class="btn" id="prevBtn">السابق</button>
+    <div id="message">مرحبا بك في معهد اكتساب</div>
+    <button class="btn" id="nextBtn">التالي</button>
+    </div>
+    <div class="sesstion_6">
+        <h1>مواقع التواصل الاجتماعي</h1>
+        <div class="info">
+            <p>phone</p>
+            <p>009660552666581</p>
+
+        </div>
+        <div class="info">
+            <p>email</p>
+            <p>i.a.cante1@hotmal.com</p>
+        </div>
+        <div class="info mei">
+            <p>i.acentre</p>
+        </div>
+    </div>
+    
+  <script>
+    const messageElement = document.getElementById('message');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    let currentMessage = 0;
+    const messages = ['المناهج الحديثة والمتطورة: يعتمد المعهد على مناهج تعليمية حديثة ومواكبة للتطورات التكنولوجية، مما يضمن إكساب الطلاب المهارات العملية المطلوبة في سوق العمل.', 'التركيز على التدريب العملي: يوفر المعهد بيئة تدريبية متكاملة تجمع بين الجانب النظري والتطبيقي، فيحصل الطلاب على خبرات عملية قيّمة خلال دراستهم.','التعاون مع الشركات والمؤسسات: يحرص المعهد على إقامة شراكات مع العديد من الشركات المرموقة، مما يتيح للطلاب فرص تدريب ميداني وتوظيف بعد التخرج.'];
+
+    function updateMessage() {
+      messageElement.textContent = messages[currentMessage];
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentMessage = (currentMessage - 1 + messages.length) % messages.length;
+      updateMessage();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentMessage = (currentMessage + 1) % messages.length;
+      updateMessage();
+    });
+
+    updateMessage();
+  </script>
+
+  
+
+
+
+
+
+</body>
+
+</html>
